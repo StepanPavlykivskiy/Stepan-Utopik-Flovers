@@ -103,7 +103,7 @@
 /*#my-slider img{
 	max-width: 100%;
 }*/
-input[type="text"] {
+/*input[type="text"] {
     border: none;
     background: #ebebea;
     float: left;
@@ -111,7 +111,7 @@ input[type="text"] {
     width: 170px;
     text-align: left;
 }
-.title__ar{
+*/.title__ar{
 	text-align: center;
  	padding: 30px 0px;
 }
@@ -148,11 +148,12 @@ input[type="text"] {
 	border-bottom: 1px solid rgba(0,0,0,.2); 
 }
 .sidebarBtn{
-	position: absolute;
-	top: 0;
-	right: -50px;
-	cursor: pointer;
-	background: #ffffff;
+    position: absolute;
+    top: 0;
+    right: -50px;
+    cursor: pointer;
+    width: 22px;
+    height: 35px;
 
 }
 .toggle{
@@ -203,7 +204,7 @@ input[type="text"] {
 	font-size: 13px;
 }
 .menu {
-    padding: 40px 30px 0px;
+    padding: 40px 21px 0px;
     display:none;
 }
 .menu ul{
@@ -218,18 +219,54 @@ input[type="text"] {
 	background:#e1e1e1;
 	height: 1px;
 }
-.search{
-	height: 28px;
-	width: 215px;
-	background:#ebebea;
-	float: right;
-	border-radius: 0 0 6px 6px;
-	margin-top: -20px;
-	margin-bottom: 25px;
-	margin-right: 31px;
-	display: none;
+
+.search form {
+  position: relative;
+  width: 215px;
+  float: right;
 }
-.search__circle{
+
+.search input {
+	width:215px; 
+  height: 30px;
+  border-radius: 0 0 6px 6px;
+  background:#ebebea;
+  color: #9E9C9C;
+  border: none;
+  text-align: left;
+  padding-left: 15px;
+}
+ .search button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    border: none;
+    background:#fff;
+    cursor: pointer;
+    margin: 6px;
+}
+.search {
+    margin-right: 30px;
+    margin-top: -20px;
+    display: none;
+}
+/*.search form input {
+    height: 28px;
+    width: 215px;
+    background: #ebebea;
+    float: right;
+    border-radius: 0 0 6px 6px;
+    margin-top: -20px;
+    margin-right: 31px;
+    display: none; 
+    border: none;
+    text-align: left;
+    padding-left: 15px;
+}*/
+/*.search__circle{
 	float: right;
 	width: 17px;
 	height: 17px;
@@ -237,23 +274,40 @@ input[type="text"] {
 	border-radius: 10px;
 	text-align: center;
 	margin: 4px;
+	border: none;
+	cursor: pointer;
+}*/
+
+.search__menu form {
+  position: relative;
+  width: 215px;
+  float: right;
 }
 .search__menu{
-	height: 28px;
-	width: 215px;
-	background:#ebebea;
-	float: right;
-	border-radius: 0 0 6px 6px;
-	margin-right: 40px;
+	margin-right: 50px;
 }
-.search__circle__menu{
-	float: right;
-	width: 17px;
-	height: 17px;
-	background: #fff;
-	border-radius: 10px;
-	text-align: center;
-	margin: 4px;
+
+.search__menu input {
+	width:215px; 
+  height: 30px;
+  border-radius: 0 0 6px 6px;
+  background:#ebebea;
+  color: #9E9C9C;
+  border: none;
+  text-align: left;
+  padding-left: 15px;
+}
+ .search__menu button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    border: none;
+    background:#fff;
+    cursor: pointer;
+    margin: 6px;
 }
 
 .sp-slide{
@@ -350,6 +404,10 @@ color: #999999;
 }
 .quick__lins{
 	display: block;
+	line-height: 19px;
+}
+.quick__lins a{
+	color: #999999;
 }
 hr{
 	margin: 0 auto;
@@ -378,31 +436,31 @@ hr{
 	color: #666666;
 	margin-bottom: 30px;
 }
-.name{
-	height: 31px;
-	width: 210px;
-	background: #e6e6e6;
-	border-radius: 6px;
-	margin: 0 auto;
-	margin-bottom: 10px;
+.placeholder{
+	margin-right:10px;
 }
-.name span{
-	font-size: 13px;
-	color: #999999;
-	margin: 10px 10px 0px 10px;
-	float: left;
-	margin-top: -18px;
+.name form input{
+    height: 31px;
+    width: 210px;
+    background: #e6e6e6;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    text-align: left;
+    border: none;
+    padding-left: 15px;
 }
 .email__newsletter{
 	padding-bottom: 50px;
 }
-.email{
+.email form input{
 	height: 31px;
-	width: 210px;
-	background: #e6e6e6;
-	border-radius: 6px;
-	margin: 0 auto;
-	margin-bottom: 10px;
+    width: 210px;
+    background: #e6e6e6;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    text-align: left;
+    border: none;
+    padding-left: 15px;
 }
 .email span{
 	font-size: 13px;
@@ -411,14 +469,16 @@ hr{
 	float: left;
 	margin-top: -18px;
 }
-.button{
+.button button{
 	font-size: 13px;
 	color: #874ca0;
 	height: 30px;
 	width: 80px;
+	border: none;
 	background: #e6e6e6;
 	border-radius:6px;
 	margin: 0 auto;
+	cursor: pointer;
 }
 .button div{
 	padding:10px;
@@ -484,6 +544,7 @@ hr{
 	}
 	.logo{
 		float:left;
+		padding-top: 35px;
 	}
 	.subtitle{
 		text-align: left;

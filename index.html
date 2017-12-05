@@ -9,15 +9,20 @@
 	<div class="header">
 		<div class="menu__navigation">
 			<div class="strip"></div>
-			<div class="search">
-				<form action='<PathCmpnt type="servlet" />
-				/library/sitearea/content' method="post">
-				<input type="text" name="search_query"/>
+			<!-- <div class="search">
+				<form action='<PathCmpnt type="servlet" />/library/sitearea/content' method="post">
+				<input type="text" name="search" placeholder="Пошук">
+				
+				<button class="search__circle">
+					<img src="img/Composite Path.png" alt="">
+			</button>
 			</form>
-			<div class="search__circle">
-				<a href="#">
-					<img src="img/Composite Path.png" alt=""></a>
-			</div>
+		</div> -->
+		<div class="search">
+			<form>
+			  <input type="text" placeholder="Пошук">
+			  <button type="submit"> <img src="img/Composite Path.png" alt=""></button>
+			</form>
 		</div>
 		<div class="logo">
 			<div class="logo__title">
@@ -57,14 +62,10 @@
 
 	<div class="sidebar">
 		<div class="search__menu">
-				<form action='<PathCmpnt type="servlet" />
-				/library/sitearea/content' method="post">
-				<input type="text" name="search_query"/>
+			<form>
+			  <input type="text" placeholder="Пошук">
+			  <button type="submit"> <img src="img/Composite Path.png" alt=""></button>
 			</form>
-			<div class="search__circle__menu">
-				<a href="#">
-					<img src="img/Composite Path.png" alt=""></a>
-			</div>
 		</div>
 		<ul>
 			<li>
@@ -86,8 +87,10 @@
 				<a href="#">GALLERY</a>
 			</li>
 		</ul>
-		<div class="sidebarBtn">
-			<span></span>
+		<div class="click-location">
+			<div class="sidebarBtn">
+				<span></span>
+			</div>
 		</div>
 	</div>
 	<!-- <div class="mCustomScrollbar" data-mcs-theme="dark">
@@ -102,7 +105,7 @@
 			<div class="sp-slides">
 				<!-- Slide 1 -->
 				<div class="sp-slide">
-					<img class = " sp-image "  src="css/images/380.jpg" alt="">
+					<img class = " sp-image "  src="css/images/natural-water-2990062_1280.jpg" alt="">
 					<div class="slide-container">
 						<div class="slide-caption">Slide 1 Caption</div>
 						<div class="slide-text">
@@ -114,7 +117,7 @@
 
 					<!-- Slide 2 -->
 					<div class="sp-slide">
-						<img class = " sp-image "  src="css/images/fafasf.jpg" alt="">
+						<img class = " sp-image "  src="css/images/stones-2990045_1280.jpg" alt="">
 						<div class="slide-container">
 							<div class="slide-caption">Slide 2 Caption</div>
 							<div class="slide-text">
@@ -127,7 +130,7 @@
 
 					<!-- 	Slide 3 -->
 					<div class="sp-slide">
-						<img class = " sp-image "  src="css/images/sagfasg.jpg" alt="">
+						<img class = " sp-image "  src="css/images/winter-2991200_1280 (1).jpg" alt="">
 						<div class="slide-container">
 							<div class="slide-caption">Slide 3 Caption</div>
 							<div class="slide-text">
@@ -147,7 +150,7 @@
 
 				<div class=" news-article-short">
 					<a href="#">
-						<img src="img/Rectangle.png" alt="">
+						<img src="img/natural-water-2990062_1280.png" alt="">
 						<div class="news__description">
 							<div class="title__more__title">Lorem ipsum dolor</div>
 							<span>
@@ -161,7 +164,7 @@
 			<div class="col-phablet-1-2 col-tablet-1-3">
 				<div class=" news-article-short">
 					<a href="#">
-						<img src="img/Rectangle.png" alt="">
+						<img src="img/stones-2990045_12802123.png" alt="">
 						<div class="news__description">
 							<div class="title__more__title">Lorem ipsum dolor</div>
 							<span>
@@ -174,7 +177,7 @@
 			<div class="col-phablet-1-2 col-tablet-1-3">
 				<div class=" news-article-short lastchlid-article-short">
 					<a href="#">
-						<img src="img/Rectangle.png" alt="">
+						<img src="img/winter-2991200_1280_1_wrqr.png" alt="">
 						<div class="news__description">
 							<div class="title__more__title">Lorem ipsum dolor</div>
 							<span>
@@ -191,7 +194,7 @@
 				<div class="col-phablet-1-2 col-tablet-1-3">
 					<div class="news">
 						<a href="#">
-							<img src="img/png.png" alt="">
+							<img src="img/natural-water-2990062_12801.png" alt="">
 							<div class="news__description">
 								<div class="title">Lorem ipsum dolor</div>
 								<span>
@@ -204,7 +207,7 @@
 				<div class="col-phablet-1-2 col-tablet-1-3">
 					<div class="news">
 						<a href="#">
-							<img src="img/png.png" alt="">
+							<img src="img/stones-2990045_1280.png" alt="">
 							<div class="news__description">
 								<div class="title">Lorem ipsum dolor</div>
 								<span>
@@ -218,7 +221,7 @@
 				<div class="col-phablet-1-2 col-tablet-1-3">
 					<div class="news">
 						<a href="#">
-							<img src="img/png.png" alt="">
+							<img src="img/winter-2991200_1280_1_.png" alt="">
 							<div class="news__description">
 								<div class="title">Lorem ipsum dolor</div>
 								<span>
@@ -257,14 +260,23 @@
 					<div class="title__links">QUICK LINKS</div>
 					<div class="text__info__links">
 						<ul>
-							<li>Link Text Here</li>
+							<li>
+								<a href="#">Link Text Here</a>
+							</li>
 							<hr>
-							<li>Link Text Here</li>
+							<li>
+								<a href="#">Link Text Here</a>
+							</li>
 							<hr>
-							<li>Link Text Here</li>
+							<li>
+								<a href="#">Link Text Here</a>
+							</li>
 							<hr>
-							<li>Link Text Here</li>
-							<hr></ul>
+							<li>
+								<a href="#">Link Text Here</a>
+							</li>
+							<hr>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -290,21 +302,19 @@
 					<div class="title__GRAB__OUR__NEWSLETTER">GRABOURNEWSLETTER</div>
 					<div class="name">
 						<form action='<PathCmpnt type="servlet" />/library/sitearea/content' method="post">
-						<input type="text" name="search_query"/>
-						<span>Name</span>
+						<input type="text" name="name" placeholder="Name">
 					</form>
 					
 					</div>
 					
 					<div class="email">
 						<form action='<PathCmpnt type="servlet" />/library/sitearea/content' method="post">
-						<input type="text" name="search_query"/>
-						<span>Email</span>
+						<input type="text" name="email" placeholder="Email">
 						</form>
 					</div>
 					
 					<div class="button">
-						<div>	<a href="">SUBMIT</a>	</div>
+						<button>SUBMIT</button>
 					</div>
 				</div>
 			</div>
