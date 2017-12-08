@@ -34,7 +34,11 @@
 	font-size: 13px;
 	color:black;
 }
-
+.container{
+	height: 300px;
+    margin-top: 40px;
+    margin-right: 23px;
+}
 .title{
 	padding: 10px;
 	color: #894aa3;
