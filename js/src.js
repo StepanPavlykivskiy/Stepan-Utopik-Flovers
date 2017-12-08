@@ -10,11 +10,5 @@ $(document).ready(function(){
 		height: 500,
 		arrows: true,
 		buttons: false,
-
-
-	});
-	$(".content").mCustomScrollbar({
-		theme:"dark",
-		axis:"y", // horizontal scrollbar
 	});
 });
